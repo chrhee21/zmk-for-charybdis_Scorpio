@@ -42,10 +42,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans    &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RSHFT  &kp RGUI  &kp RCTRL  &kp RALT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans    &trans     &trans    &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
             >;
