@@ -11,6 +11,28 @@
 };
 
 / {
+
+    behaviors {
+        as: autoshift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            bindings = <&as_macro>, <&kp>;
+            flavor = "tap-preferred";
+        };
+
+        as_macro: as_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_MACRO";
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp LSHFT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
